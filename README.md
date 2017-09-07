@@ -15,7 +15,6 @@ w3school在线教程：[http://www.w3school.com.cn/](http://www.w3school.com.cn/
 ----------
 
 
-
 全栈开发必备的10款Sublime Text插件：[http://www.php100.com/html/it/focus/2014/1128/7935.html](http://www.php100.com/html/it/focus/2014/1128/7935.html)
 
 
@@ -79,6 +78,7 @@ Tween算法：[http://www.cnblogs.com/bluedream2009/archive/2010/06/19/1760909.h
 
 移动端touch.js：[http://blog.csdn.net/libin_1/article/details/50534611](http://blog.csdn.net/libin_1/article/details/50534611)
 
+
 ## JavaScript深度学习 ##
 推荐javascript-in-one-pic
 
@@ -89,21 +89,6 @@ js深度体系学习（js-in-one-pic）：[https://github.com/coodict/javascript
 js原型对象理解：[http://blog.csdn.net/liwenqiang758/article/details/8190263](http://blog.csdn.net/liwenqiang758/article/details/8190263)
 
 巧用apply、call、bind：[http://www.admin10000.com/document/6711.html](http://www.admin10000.com/document/6711.html)
-
-
-----------
-
-
-## PHP基础学习 ##
-php基础、json、ajax
-
-PHP手册：[http://www.php.net/](http://www.php.net/)
-
-代码状态百科：[http://baike.baidu.com/view/1311386.htm](http://baike.baidu.com/view/1311386.htm)
-
-json在线校验工具：[http://www.kjson.com/](http://www.kjson.com/)
-
-URL编码/解码：[http://tool.oschina.net/encode?type=4](http://tool.oschina.net/encode?type=4)
 
 
 ----------
@@ -126,7 +111,6 @@ WebStorm2016.2.3：[http://www.wuleba.com/28503.html](http://www.wuleba.com/2850
 
 
 ----------
-
 
 
 ## 建站工具 ##
