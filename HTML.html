@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<!-- base:基础标签 
+		href：给页面所有的相对路径规定默认的基准URL
+		target:a链接默认窗口模式，下面a链接会覆盖当前的设置
+	-->
+	<base href="">
+</head>
+<body>
+	<!-- h1-h6标题标签，文字的大小依次减小，在文档中的重要性也依次变小
+	标题一般只用一次
+	宽度独占一整行
+	 -->
+	<h1 style="background-color:red;">this is heading1</h1>
+	<h2 style="background-color:red;">this is heading2</h2>
+	<h3 style="background-color:red;">this is heading3</h3>
+	<h4 style="background-color:red;">this is heading4</h4>
+	<h5 style="background-color:red;">this is heading5</h5>
+	<h6 style="background-color:red;">this is heading6</h6>
+	<!--无h7标签 <h7>this is heading7</h7> -->
+
+	<!-- p标签，段落标签，宽度占据一整行
+	高度适应文本高度
+	 -->
+	<p style="background-color:green;">这是我的第一个段落文章，有点丑，因为没有样式</p>
+	<p style="background-color:green;" id="htmltext">超文本标记语言，标准通用标记语言下的一个应用。 “超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。<br> 超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。</p>
+
+	<!-- hr：水平分割线单标签，没有结束标签 -->
+	<hr>
+	
+	<!--br 换行标签，一般结合段落使用  -->
+	小明：--------------
+	<br>
+	小红：--------------
+	<br>
+	
+	<!--  qoute q 标签，引用标签，标签大小适应内容大小-->
+	<q style="background:red;">传道授业解惑也</q>
+	<q style="background:red;">传道授业解惑也</q>
+	<q style="background:red;">传道授业解惑也</q>
+
+	
+	<p>111</p>
+	<p>222</p>
+
+	<!-- 引用一大段话，自动缩进 -->
+	<blockquote style="background:green;">超文本标记语言，标准通用标记语言下的一个应用。 “超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容</blockquote>
+
+
+	<!-- 告诉浏览器内部是代码,大小适应内容 -->
+	int a = 10; for(int i= 0;i&lt;10;i++)<br>
+	<code>
+		int a = 10; for(int i= 0;i&lt;10;i++)
+	</code>
+	<br>
+
+	for(int a =10; i &lt; 100; i++){
+		print("%d",i);
+	}
+	<br>
+
+	<!-- pre:预处理标签，告诉浏览器内容愿样式显示，保留空格换行等-->
+	<pre>
+		for(int a =10; i &lt; 100; i++){
+			print("%d",i);
+		}
+	</pre>
+
+	<!-- strong标签 强调加粗 
+		em标签：强调斜体
+	-->
+	<strong style="background-color:red;">强调加粗</strong>
+	<p>房贷还款双方都<strong>强调加粗</strong>会发生大火焚烧发电是否合适的</p>
+	<p>房贷还款双方都<em>强调唯一性</em>会发生大火焚烧发电是否合适的</p>
+
+	<!-- b：加粗 
+
+	-->
+	<p>房贷还款双方都<b>强调加粗</b>会发生大火焚烧发电是否合适的</p>
+	<!-- i: 倾斜 
+
+	-->
+	<p>房贷还款双方都<i>强调唯一性</i>会发生大火焚烧发电是否合适的</p>
+
+	<!-- 上标：sup 
+		下标：sub
+	-->
+	x<sup>2</sup> + y<sup>2</sup> - 1
+	<br>
+	x<sub>1</sub> + y<sub>1</sub> = 10
+	<br>
+
+	<!-- 
+	img:图片标签
+		src：图片路径 网络路径和本地路径
+		alt: 图片描述 图片加载失败显示
+	-->
+	<img src="http://img73.nipic.com/file/20160414/9252150_120745103583_1.jpg" alt="">
+	<br>
+
+	<!-- 
+	相对路径：./:从根目录到当前文件下，可以省略,同第一种写法
+	../返回上一级
+	 -->
+	<img src="img/img.jpg" alt="rose">
+	<img src="./img/img.jpg" alt="rose">
+	<br>
+	<img src="../img/img.jpg" alt="rose">
+	<br>
+	
+	<!-- a标签：超链接
+	href:跳转位置（网络链接，本地地址）
+	target:1._self:默认：当前窗口打开
+			2._blank：新的页面
+	 -->
+	<a href="http://www.baidu.com" 	target="_blank">百度</a>
+	<a href="index1.html" target="_blank">index1</a>
+
+	<!-- 返回顶部 -->
+	<a href="#">返回顶部</a>
+
+	<!-- 回到某个标签位置 -->
+	<a href="#htmltext">超文本标记语言</a>
+
+	<!-- 
+	列表：无序列表，有序列表，自定义列表
+	 -->
+	<!-- 无序 -->
+	<ul>
+		<li style="background-color:red;">H5</li>
+		<li>IOS</li>
+		<li>Android</li>
+	</ul>
+	<!-- 有序 -->
+	<ol style="background-color:red;">
+		<li>吃饭</li>
+		<li>睡觉</li>
+		<li>打豆豆</li>
+	</ol>
+	<!-- 自定义列表 -->
+	<dl>
+		<!-- 标题 -->
+		<dt style="background-color:red;">内容标题</dt>
+		<!-- 内容 -->
+		<dd style="background-color:green;">标题内容1</dd>
+		<dd>标题内容2</dd>
+		<dd>标题内容3</dd>
+		<!-- 标题 -->
+		<dt>内容标题</dt>
+		<!-- 内容 -->
+		<dd>标题内容1</dd>
+		<dd>标题内容2</dd>
+		<dd>标题内容3</dd>
+	</dl>
+
+
+	<!-- 总结
+		1.块元素：p pre ul ol li dl h1-h6等
+		{
+			特点：默认都占一行
+			支持设置宽高
+			高度自适应（自适应内容）
+			支持所有css样式
+
+		}
+		2.内嵌元素（行元素）：
+		{
+			特点：可以同行显示
+			内容撑开宽高
+			不支持宽高设置
+			有些css样式不支持（margin）
+		}
+	 -->
+
+	 	<!-- 
+		div：定义文档中的一个区域部分  相当于view视图区域
+		一般用于组合块级元素，可以方便css来对子元素进行设置
+
+		div：块元素
+		px:像素单位
+	 -->
+	<div style="color:pink;background-color:red;width:200px;">
+		<p style="color:blue; background-color:yellow;width:100px;height:50px;">pppppppppppppp</p>
+		<p>pppppppppppppp</p>
+		<h3>pppppppppppppp</h3>
+		<strong style="background-color:yellow;width:200px;height:100px;">我是一个内线元素</strong><span>111</span>
+		<div style="width:100px;height:100px;background-color:blue;">.............</div>
+	</div>
+
+	<!-- <span>:本身没有任何的格式表现，主要用于对文档行内元素进行组合，给审判标签设置样式
+	属于内嵌元素
+	无法定义宽高		
+	 -->
+	<p style="color:red;">今天是个<span style="color:green;font-size:20px;">好日子</span>，是一个考试的好日子</p>
+
+	<!-- 不能嵌套块元素，浏览器布局改变 -->
+	<p>块元素可以嵌套大部分块元素，<p>我是一个嵌套p</p>可以嵌套行内元素</p>
+	<!-- 不能嵌套块元素，浏览器布局改变 -->
+	<h3>块元素可以嵌套<h2>大部分块元</h2>素，可以嵌套行内元素</h3>
+
+	<br>
+	<span style="">
+		2.（内嵌元素）行<strong>元素</strong>可以嵌套内嵌元素，但是不可以嵌套块元素
+	</span>
+	<br><br>
+
+	<!-- 不可以嵌套块元素 -->
+	<span style="">
+	2.（内嵌元素）行<div>元素</div>可以嵌套内嵌元素，但是不可以嵌套块元素</span>
+
+	<!-- 
+		嵌套：
+		1.块元素可以嵌套大部分块元素，可以嵌套行内元素
+		特殊块元素P h1-h6 dt dl dd:不能嵌套块元素
+
+		2.（内嵌元素）行元素可以嵌套内嵌元素，但是不可以嵌套块元素
+	 -->
+
+
+	 	<!--tfoot 表格尾(尾一般在前面) 
+		thead 表格头
+		tbody 表格主体
+		caption 标题
+		
+		表格样式重置
+		table{border-collapse:collapse;} 
+	-->
+	<h3>1.table表格</h3>
+
+	<!-- border:是table的一个属性 
+		他的值或者是“”或者是“1”
+		border-collapse：设置表格边框是否被合并为单一的边框
+		collapse：边框合并
+		separate：边框分开
+	-->
+	<table border="1" style="border-collapse:collapse;">
+		<!-- tr：确定表格行 -->
+		<tr>
+			<!-- td：确定表格列 -->
+			<td>语文</td>
+			<td>数学</td>
+			<td>英语</td>
+			<td>体育</td>
+			<td>美术</td>
+		</tr>
+		<!-- 第二行 -->
+		<tr>
+			<!-- td：确定表格列 -->
+			<td>语文</td>
+			<td>数学</td>
+			<td>英语</td>
+			<td>体育</td>
+			<td>美术</td>
+		</tr>
+	</table>
+
+	<h3>table1 添加表头</h3>
+	<table border="1" style="border-collapse:collapse; width:500px;height:200px; text-align:center;">
+		<tr>
+			<th>星期一</th>
+			<th>星期二</th>
+			<th>星期三</th>
+			<th>星期四</th>
+			<th>星期五</th>
+		</tr>
+		<!-- tr：确定表格行 -->
+		<tr>
+			<!-- td：确定表格列 -->
+			<td>语文</td>
+			<td>数学</td>
+			<td>英语</td>
+			<td>体育</td>
+			<td>美术</td>
+		</tr>
+		<!-- 第二行 -->
+		<tr>
+			<!-- td：确定表格列 -->
+			<td>语文</td>
+			<td>数学</td>
+			<td>英语</td>
+			<td>体育</td>
+			<td>美术</td>
+		</tr>
+	</table>
+
+	<h3>table2 列合并单元格</h3>
+	<table border="1" style="border-collapse:collapse; width:500px;height:200px; text-align:center;">
+		<tr>
+			<th>星期一</th>
+			<th>星期二</th>
+			<th>星期三</th>
+			<th>星期四</th>
+			<th>星期五</th>
+		</tr>
+		<!-- tr：确定表格行 -->
+		<tr>
+			<!-- td：确定表格列 -->
+			<td>语文</td>
+			<td>数学</td>
+			<td>英语</td>
+			<td>体育</td>
+			<td>美术</td>
+		</tr>
+		<!-- 第二行 -->
+		<tr>
+			<!-- td：确定表格列 -->
+			<td>语文</td>
+			<td>数学</td>
+			<td>英语</td>
+			<td>体育</td>
+			<td>美术</td>
+		</tr>
+		<tr>
+			<td colspan="5">课程安排计划总结</td>
+		<!--<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		-->
+		</tr>
+	</table>
+
+	<h3>table3 行合并单元格</h3>
+	<table border="1" style="border-collapse:collapse; width:500px;height:200px; text-align:center;">
+		<tr>
+			<th rowspan="4">课程基本信息</th>
+			<th>星期一</th>
+			<th>星期二</th>
+			<th>星期三</th>
+			<th>星期四</th>
+			<th>星期五</th>
+		</tr>
+		<!-- tr：确定表格行 -->
+		<tr>
+			<!-- td：确定表格列 -->
+			<td>语文</td>
+			<td>数学</td>
+			<td>英语</td>
+			<td>体育</td>
+			<td>美术</td>
+		</tr>
+		<!-- 第二行 -->
+		<tr>
+			<!-- td：确定表格列 -->
+			<td>语文</td>
+			<td>数学</td>
+			<td>英语</td>
+			<td>体育</td>
+			<td>美术</td>
+		</tr>
+		<tr>
+			<td colspan="5">课程安排计划总结</td>
+		</tr>
+	</table>
+
+	<h3>table4 合并单元格</h3>
+	<table border="1" style="border-collapse:collapse; width:500px;height:200px; text-align:center;">
+		<tr>
+			<th rowspan="3">课程基本信息</th>
+			<th>星期一</th>
+			<th>星期二</th>
+			<th>星期三</th>
+			<th>星期四</th>
+			<th>星期五</th>
+		</tr>
+		<!-- tr：确定表格行 -->
+		<tr>
+			<!-- td：确定表格列 -->
+			<td>语文</td>
+			<td>数学</td>
+			<td>英语</td>
+			<td>体育</td>
+			<td>美术</td>
+		</tr>
+		<!-- 第二行 -->
+		<tr>
+			<!-- td：确定表格列 -->
+			<td>语文</td>
+			<td>数学</td>
+			<td>英语</td>
+			<td>体育</td>
+			<td>美术</td>
+		</tr>
+		<tr>
+			<td colspan="6">课程安排计划总结</td>
+		</tr>
+	</table>
+
+	<h3>table5 合并单元格</h3>
+	<table border="1" style="border-collapse:collapse; width:500px;height:200px; text-align:center;">
+		<tr>
+			<th>星期一</th>
+			<th>星期二</th>
+			<th>星期三</th>
+			<th>星期四</th>
+			<th>星期五</th>
+		</tr>
+		<!-- tr：确定表格行 -->
+		<tr>
+			<!-- td：确定表格列 -->
+			<td rowspan="2">语文</td>
+			<td>数学</td>
+			<td>英语</td>
+			<td>体育</td>
+			<td>美术</td>
+		</tr>
+		<!-- 第二行 -->
+		<tr>
+			<!-- td：确定表格列 -->
+			<td>数学</td>
+			<td>英语</td>
+			<td colspan="2">体育</td>
+			<!-- <td>美术</td> -->
+		</tr>		
+	</table>
+
+	<h3>table6 完整版表格</h3>
+	<table border="1" style="border-collapse:collapse; width:500px;height:200px; text-align:center;">
+		
+		<tfoot>
+			<tr>
+				<td colspan="5">课程安排计划总结</td>
+			</tr>
+		</tfoot>
+		<thead>
+			<tr>
+				<th>星期一</th>
+				<th>星期二</th>
+				<th>星期三</th>
+				<th>星期四</th>
+				<th>星期五</th>
+			</tr>
+		</thead>
+		<!-- tr：确定表格行 -->
+		<tbody>
+			<tr>
+				<!-- td：确定表格列 -->
+				<td>语文</td>
+				<td>数学</td>
+				<td>英语</td>
+				<td>体育</td>
+				<td>美术</td>
+			</tr>
+			<!-- 第二行 -->
+			<tr>
+				<!-- td：确定表格列 -->
+				<td>语文</td>
+				<td>数学</td>
+				<td>英语</td>
+				<td>体育</td>
+				<td>美术</td>
+			</tr>	
+		</tbody>			
+	</table>
+
+	<h3>table7 其他设置</h3>
+	<table border="1" style="border-collapse:collapse; width:500px;height:200px; text-align:center; background-color:yellow;">
+		<!-- 标题 -->
+		<caption>课程表</caption>
+		<!-- 设置列 -->
+		<colgroup>
+			<!-- 第一个占位，第二个设置 -->
+			<!-- span:规定占据个数 -->
+			<col span="2">
+			<col style="background-color:red;">
+			<col style="background-color:blue;">
+		</colgroup>
+		<tr>
+			<th rowspan="4">课程基本信息</th>
+			<th>星期一</th>
+			<th>星期二</th>
+			<th>星期三</th>
+			<th>星期四</th>
+			<th>星期五</th>
+		</tr>
+		<!-- tr：确定表格行 -->
+		<tr style="color:pink;">
+			<!-- td：确定表格列 -->
+			<td>语文</td>
+			<td>数学</td>
+			<td>英语</td>
+			<td>体育</td>
+			<td>美术</td>
+		</tr>
+		<!-- 第二行 -->
+		<tr>
+			<!-- td：确定表格列 -->
+			<td>语文</td>
+			<td>数学</td>
+			<td>英语</td>
+			<td>体育</td>
+			<td>美术</td>
+		</tr>
+		<tr>
+			<td colspan="5">课程安排计划总结</td>
+		</tr>
+	</table>
+
+	<!-- 
+		table:表格；tr:行；td:列；th：标题
+
+		tbody：当表格内容非常多的时候，表格下载一点一点下载，但是加上tbody后，就会等表格body下载完成后显示。（内容多的话会有多个tbody）
+
+		表格优化：将tfoot放到tbody上面，可以让浏览器有限解析加载，显示正常位置显示
+	 -->
+
+
+</body>
+</html>
